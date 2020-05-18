@@ -17,6 +17,7 @@
     };
     </script>
 
+  <!-- JQUERY -->
   <!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script-->
   <link href="css/jquery.atwho.css" rel="stylesheet">
   <script src="http://code.jquery.com/jquery.js"></script>
@@ -50,7 +51,7 @@
 
       $("#input").on("inserted.atwho",function(atwho, $li, event) {
         // After atwho (suggestion box) insert an item $li
-        // trigger input event for textarea id="input"
+        // trigger input event for textarea with id="input"
         $("#input").trigger("input");
 
         // if $li ends with '}' change cursor position beetwin brakets
@@ -395,6 +396,7 @@
                 strUtil1 = strUtil1 + '}';
                 slashLastIndex += 2;
               }
+
               addTextToSuggestions(strUtil1, slashModeStart,slashLastIndex);
               slashModeStart = -1;
               slashLastIndex = -1;
