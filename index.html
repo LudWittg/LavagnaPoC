@@ -317,7 +317,7 @@
 
         document.getElementById('input').addEventListener('keydown', e => {
           const key = event.key; // const {key} = event; ES6+
-          if (key === "Backspace" || key === "Delete" || event.keyCode === 8) {
+          if (key === "Backspace" || key === "Delete" || event.keyCode == 8 || event/keyCode == 46) {
             backspace = true;
           }
           // check if ctrl+z was pressed, suppress braket completion
